@@ -1,0 +1,93 @@
+*{
+    margin:0;
+    padding:0;
+}
+.game-area{
+    width:800px;
+    height: 600px;
+    border:2px solid;
+    position: relative;
+    margin: 50px auto 0;
+    overflow: hidden;
+}
+.game-area .sky{
+    background: url(./img/sky.png);
+    width: 200%;
+    height: 100%;
+    position: absolute;
+    top:0;
+    
+
+}
+.game-area .earth{
+    background:url("./img/land.png");
+    width: 200%;
+    height: 100px;
+    position: absolute;
+    bottom: 0;
+}
+.game-area .pipe{
+    position: absolute;
+    height: 100px;
+    width: 52px;
+    /* left: 800px; */
+
+}
+.game-area .pipe.up{
+    background: url('./img/pipeDown.png');
+    top:0;
+    background-position: bottom;
+}
+.game-area .pipe.down{
+    background:url('./img//pipeUp.png');
+    bottom:100px;
+    
+}
+.game-area .bird {
+    background: url("./img/bird.png");
+    position: absolute;
+    width: 33px;
+    height: 26px;
+    left: 150px;
+    top: 150px;
+}
+
+.game-area .bird.swing1{
+    background-position: -8px -10px;
+}
+
+.game-area .bird.swing2{
+    background-position: -60px -10px;
+}
+
+.game-area .bird.swing3{
+    background-position: -113px -10px;
+}
+
+.moke{
+    display: none;
+    position: absolute;
+    top:0;
+    left: 0;
+    background-color: rgba(0, 0, 0, 0.5);
+    width:100%;
+    height: 100%;
+    color:#fff;
+    z-index: 999;
+
+}
+.moke h3{
+    position: absolute;
+    width:100%;
+    text-align: center;
+    top:50%;
+    transform: translateY(-50%);
+    font-size: 50px;
+}
+p{
+    text-align:center;
+    margin-top:50px;
+}
+#grade{
+    text-align: center;
+}
